@@ -9,7 +9,7 @@ pipeline {
                 echo 'Running build automation'
                 sh './gradlew build'
                 archiveArtifacts artifacts: 'dist/trainSchedule.zip',
-                    allowEmptyArchieve: true
+                    allowEmptyArchive: true
                 fingerprint targets: 'dist/trainSchedule.zip'
             }
         }
